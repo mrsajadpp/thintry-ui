@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thintry | A Tech Hub Portal</title>
+    <style>
+        /* Custom styles for dark theme */
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .site-header-menu-toggle--button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: transparent;
+        }
+
+        .site-header-menu-toggle--button .toggle-icon--bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: #fff;
+            transition: transform .1s cubic-bezier(.4, 0, .2, 1);
+            transform-origin: 1px;
+        }
+
+        .site-header-menu-toggle--button .toggle-icon--bar.toggle-icon--bar-middle {
+            transition: opacity .1s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .site-header-menu-toggle--button .toggle-icon--bar+.toggle-icon--bar {
+            margin-top: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <header class="hidden" style="z-index: 999;" id="searcBox">
+        <div class="center">
+            <div class="search-box">
+                <input type="text" placeholder="Search" class="search-inp">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: #fff;">
+                        <path
+                            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <span class="icon" onclick="document.getElementById('searcBox').classList.toggle('hidden')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: #fff;">
+                    <path
+                        d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                    </path>
+                </svg>
+            </span>
+        </div>
+    </header>
+
+    <header style="z-index: 998;">
+        <div class="left">
+            <div class="site-header-menu-toggle--button" tabindex="-1">
+                <span class="toggle-icon--bar toggle-icon--bar-top"></span>
+                <span class="toggle-icon--bar toggle-icon--bar-middle"></span>
+                <span class="toggle-icon--bar toggle-icon--bar-bottom"></span>
+            </div>
+        </div>
+        <div class="center">
+            <img src="https://i.postimg.cc/3wHdKGCv/thtylogo.png" alt="">
+        </div>
+        <div class="right">
+            <span class="icon" onclick="document.getElementById('searcBox').classList.toggle('hidden')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+            </span>
+            <!-- <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: #fff;">
+                    <path
+                        d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                    </path>
+                    <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                    <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                </svg>
+            </span> -->
+        </div>
+    </header>
+</body>
+
+</html>
